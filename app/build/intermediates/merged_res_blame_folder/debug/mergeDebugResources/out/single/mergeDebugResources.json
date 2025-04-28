@@ -1,0 +1,150 @@
+[
+    {
+        "merged": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-debug-28:/layout_activity_likes.xml.flat",
+        "source": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-main-30:/layout/activity_likes.xml"
+    },
+    {
+        "merged": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-debug-28:/drawable_online_indicator.xml.flat",
+        "source": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-main-30:/drawable/online_indicator.xml"
+    },
+    {
+        "merged": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-debug-28:/layout_item_match_grid.xml.flat",
+        "source": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-main-30:/layout/item_match_grid.xml"
+    },
+    {
+        "merged": "com.example.homerental.app-debug-28:/drawable_circle_button.xml.flat",
+        "source": "com.example.homerental.app-main-30:/drawable/circle_button.xml"
+    },
+    {
+        "merged": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-debug-28:/anim_item_animation_from_bottom.xml.flat",
+        "source": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-main-30:/anim/item_animation_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-debug-28:/drawable_edit_text_background.xml.flat",
+        "source": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-main-30:/drawable/edit_text_background.xml"
+    },
+    {
+        "merged": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-debug-28:/menu_bottom_navigation_menu.xml.flat",
+        "source": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-main-30:/menu/bottom_navigation_menu.xml"
+    },
+    {
+        "merged": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-debug-28:/layout_fragment_likes_given.xml.flat",
+        "source": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-main-30:/layout/fragment_likes_given.xml"
+    },
+    {
+        "merged": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-debug-28:/layout_fragment_matches.xml.flat",
+        "source": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-main-30:/layout/fragment_matches.xml"
+    },
+    {
+        "merged": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-debug-28:/layout_item_liked_property.xml.flat",
+        "source": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-main-30:/layout/item_liked_property.xml"
+    },
+    {
+        "merged": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-debug-28:/layout_fragment_likes_received.xml.flat",
+        "source": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-main-30:/layout/fragment_likes_received.xml"
+    },
+    {
+        "merged": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-debug-28:/layout_activity_main.xml.flat",
+        "source": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-main-30:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-debug-28:/layout_activity_matches.xml.flat",
+        "source": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-main-30:/layout/activity_matches.xml"
+    },
+    {
+        "merged": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-debug-28:/drawable_gradient_black.xml.flat",
+        "source": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-main-30:/drawable/gradient_black.xml"
+    },
+    {
+        "merged": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-debug-28:/drawable_circle_background.xml.flat",
+        "source": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-main-30:/drawable/circle_background.xml"
+    },
+    {
+        "merged": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-debug-28:/layout_activity_login.xml.flat",
+        "source": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-main-30:/layout/activity_login.xml"
+    },
+    {
+        "merged": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-debug-28:/drawable_button_background.xml.flat",
+        "source": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-main-30:/drawable/button_background.xml"
+    },
+    {
+        "merged": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-debug-28:/layout_activity_profile.xml.flat",
+        "source": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-main-30:/layout/activity_profile.xml"
+    },
+    {
+        "merged": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-debug-28:/layout_item_match.xml.flat",
+        "source": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-main-30:/layout/item_match.xml"
+    },
+    {
+        "merged": "com.example.homerental.app-debug-28:/drawable_message_bubble_other.xml.flat",
+        "source": "com.example.homerental.app-main-30:/drawable/message_bubble_other.xml"
+    },
+    {
+        "merged": "com.example.homerental.app-debug-28:/drawable_message_bubble_user.xml.flat",
+        "source": "com.example.homerental.app-main-30:/drawable/message_bubble_user.xml"
+    },
+    {
+        "merged": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-debug-28:/drawable_like_stamp.xml.flat",
+        "source": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-main-30:/drawable/like_stamp.xml"
+    },
+    {
+        "merged": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-debug-28:/layout_item_property.xml.flat",
+        "source": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-main-30:/layout/item_property.xml"
+    },
+    {
+        "merged": "com.example.homerental.app-debug-28:/layout_item_message_other.xml.flat",
+        "source": "com.example.homerental.app-main-30:/layout/item_message_other.xml"
+    },
+    {
+        "merged": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-debug-28:/layout_fragment_search.xml.flat",
+        "source": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-main-30:/layout/fragment_search.xml"
+    },
+    {
+        "merged": "com.example.homerental.app-debug-28:/layout_item_message_user.xml.flat",
+        "source": "com.example.homerental.app-main-30:/layout/item_message_user.xml"
+    },
+    {
+        "merged": "com.example.homerental.app-debug-28:/layout_fragment_message_dialog.xml.flat",
+        "source": "com.example.homerental.app-main-30:/layout/fragment_message_dialog.xml"
+    },
+    {
+        "merged": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-debug-28:/layout_fragment_match_grid.xml.flat",
+        "source": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-main-30:/layout/fragment_match_grid.xml"
+    },
+    {
+        "merged": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-debug-28:/layout_item_blurred_like.xml.flat",
+        "source": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-main-30:/layout/item_blurred_like.xml"
+    },
+    {
+        "merged": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-debug-28:/drawable_dislike_stamp.xml.flat",
+        "source": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-main-30:/drawable/dislike_stamp.xml"
+    },
+    {
+        "merged": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-debug-28:/drawable_gradient_overlay.xml.flat",
+        "source": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-main-30:/drawable/gradient_overlay.xml"
+    },
+    {
+        "merged": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-debug-28:/drawable_gradient_background.xml.flat",
+        "source": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-main-30:/drawable/gradient_background.xml"
+    },
+    {
+        "merged": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-debug-28:/layout_fragment_match_list.xml.flat",
+        "source": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-main-30:/layout/fragment_match_list.xml"
+    },
+    {
+        "merged": "com.example.homerental.app-debug-28:/drawable_rounded_edit_text.xml.flat",
+        "source": "com.example.homerental.app-main-30:/drawable/rounded_edit_text.xml"
+    },
+    {
+        "merged": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-debug-28:/layout_fragment_profile.xml.flat",
+        "source": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-main-30:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-debug-28:/drawable_button_outline_background.xml.flat",
+        "source": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-main-30:/drawable/button_outline_background.xml"
+    },
+    {
+        "merged": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-debug-28:/layout_fragment_home.xml.flat",
+        "source": "/Users/daxon/.gradle/daemon/8.10.2/com.example.homerental.app-main-30:/layout/fragment_home.xml"
+    }
+]

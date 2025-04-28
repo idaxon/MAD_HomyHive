@@ -1,0 +1,6 @@
+com.example.homerental.test.app-jetified-annotation-experimental-1.3.0-0 /Users/daxon/.gradle/caches/8.10.2/transforms/796eca3e6d486c341485e09baa19e842/transformed/jetified-annotation-experimental-1.3.0/res
+com.example.homerental.test.app-jetified-core-1.5.0-1 /Users/daxon/.gradle/caches/8.10.2/transforms/a869e11c6cf5fb5af87fd098d72d4b00/transformed/jetified-core-1.5.0/res
+com.example.homerental.test.app-androidTest-2 /Users/daxon/Desktop/MAD/app/build/generated/res/resValues/androidTest/debug
+com.example.homerental.test.app-mergeDebugAndroidTestResources-3 /Users/daxon/Desktop/MAD/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.example.homerental.test.app-mergeDebugAndroidTestResources-4 /Users/daxon/Desktop/MAD/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.example.homerental.test.app-debugAndroidTest-5 /Users/daxon/Desktop/MAD/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources

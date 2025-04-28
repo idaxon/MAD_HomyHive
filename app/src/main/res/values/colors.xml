@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#121212</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#4CAF50</color>
+    
+    <color name="background_dark">#121212</color>
+    <color name="like_green">#4CAF50</color>
+    <color name="dislike_red">#F44336</color>
+    <color name="price_green">#4CAF50</color>
+</resources>
