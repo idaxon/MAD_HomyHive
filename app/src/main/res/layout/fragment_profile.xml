@@ -3,16 +3,488 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/background_dark">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Profile Fragment"
-        android:textSize="24sp"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- User Profile Section with Animation -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardViewUserProfile"
+                style="@style/ModernCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="@color/card_background_white"
+                app:rippleColor="@color/colorAccent_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@color/divider"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <!-- Message Icon in top corner -->
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fabMessages"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:fabSize="mini"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@android:drawable/ic_dialog_email"
+                        app:tint="@android:color/white"
+                        app:backgroundTint="@color/colorAccent" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivUserProfilePic"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@android:drawable/ic_menu_myplaces"
+                        app:civ_border_color="@color/colorAccent"
+                        app:civ_border_width="3dp"
+                        android:elevation="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvUserName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="John Doe"
+                        android:textColor="@color/text_primary"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/ivUserProfilePic"
+                        app:layout_constraintTop_toTopOf="@+id/ivUserProfilePic" />
+
+                    <TextView
+                        android:id="@+id/tvUserEmail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="4dp"
+                        android:text="john.doe@example.com"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/ivUserProfilePic"
+                        app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
+
+                    <TextView
+                        android:id="@+id/tvProfileCompletion"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Profile Completion: 75%"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/ivUserProfilePic"
+                        app:layout_constraintTop_toBottomOf="@+id/tvUserEmail" />
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:id="@+id/progressBarProfile"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="4dp"
+                        android:progress="75"
+                        app:indicatorColor="@color/colorAccent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/ivUserProfilePic"
+                        app:layout_constraintTop_toBottomOf="@+id/tvProfileCompletion"
+                        app:trackColor="@color/divider" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipVerified"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Verified"
+                        app:chipBackgroundColor="@color/colorAccent"
+                        app:chipIcon="@drawable/ic_m3_chip_check"
+                        app:chipIconTint="@android:color/white"
+                        app:layout_constraintStart_toStartOf="@+id/progressBarProfile"
+                        app:layout_constraintTop_toBottomOf="@+id/progressBarProfile"
+                        app:textEndPadding="8dp"
+                        app:textStartPadding="8dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnEditProfile"
+                        style="@style/ModernButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:backgroundTint="@color/colorAccent"
+                        android:text="Edit Profile"
+                        android:textColor="#FFFFFF"
+                        app:cornerRadius="20dp"
+                        app:icon="@android:drawable/ic_menu_edit"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/chipVerified" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- AI Analysis Section -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardViewAIAnalysis"
+                style="@style/ModernCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="@color/card_background_white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardViewUserProfile"
+                app:strokeColor="@color/divider"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tvAIAnalysisTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="AI Roommate Compatibility"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ivAIIcon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="16dp"
+                        android:src="@android:drawable/ic_dialog_info"
+                        android:tint="@color/colorAccent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvAIAnalysisTitle" />
+
+                    <TextView
+                        android:id="@+id/tvAIAnalysisDesc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="Our AI has analyzed your preferences and habits to find your ideal roommate match."
+                        android:textColor="#424242"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/ivAIIcon"
+                        app:layout_constraintTop_toTopOf="@+id/ivAIIcon" />
+
+                    <com.google.android.material.progressindicator.CircularProgressIndicator
+                        android:id="@+id/progressCompatibility"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:progress="85"
+                        app:indicatorColor="@color/colorAccent"
+                        app:indicatorSize="120dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvAIAnalysisDesc"
+                        app:trackColor="@color/divider"
+                        app:trackThickness="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvCompatibilityScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="85%"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/progressCompatibility"
+                        app:layout_constraintEnd_toEndOf="@+id/progressCompatibility"
+                        app:layout_constraintStart_toStartOf="@+id/progressCompatibility"
+                        app:layout_constraintTop_toTopOf="@+id/progressCompatibility" />
+
+                    <TextView
+                        android:id="@+id/tvAIInsight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="You're most compatible with quiet, non-smoking roommates who are available on weekends."
+                        android:textColor="#424242"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/progressCompatibility" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnViewDetailedAnalysis"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="View Detailed Analysis"
+                        android:textColor="@color/colorAccent"
+                        app:icon="@android:drawable/ic_menu_info_details"
+                        app:iconTint="@color/colorAccent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvAIInsight" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- User Preferences Section with Interactive Elements -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardViewUserPreferences"
+                style="@style/ModernCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="@color/card_background_white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardViewAIAnalysis"
+                app:strokeColor="@color/divider"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tvPreferencesTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="My Preferences"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!-- Interactive Preference Controls -->
+                    <TextView
+                        android:id="@+id/tvBudgetLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Budget Range:"
+                        android:textColor="#424242"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvPreferencesTitle" />
+
+                    <TextView
+                        android:id="@+id/tvBudgetValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="$800 - $1200"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvBudgetLabel"
+                        app:layout_constraintStart_toEndOf="@+id/tvBudgetLabel"
+                        app:layout_constraintTop_toTopOf="@+id/tvBudgetLabel" />
+
+                    <com.google.android.material.slider.RangeSlider
+                        android:id="@+id/sliderBudget"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:valueFrom="500"
+                        android:valueTo="2000"
+                        app:labelBehavior="withinBounds"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvBudgetLabel"
+                        app:thumbColor="@color/colorAccent"
+                        app:thumbRadius="8dp"
+                        app:trackColorActive="@color/colorAccent"
+                        app:trackColorInactive="@color/divider"
+                        app:values="@array/initial_budget_range" />
+
+                    <!-- Location Preference with Map Preview -->
+                    <TextView
+                        android:id="@+id/tvLocationLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Preferred Location:"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sliderBudget" />
+
+                    <TextView
+                        android:id="@+id/tvLocation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="Downtown, Near University"
+                        android:textColor="#757575"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tvLocationLabel"
+                        app:layout_constraintTop_toTopOf="@+id/tvLocationLabel" />
+
+                    <ImageView
+                        android:id="@+id/ivMapPreview"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#E0E0E0"
+                        android:scaleType="centerCrop"
+                        android:src="@android:drawable/ic_dialog_map"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvLocation" />
+
+                    <!-- Lifestyle Preferences with Interactive Chips -->
+                    <TextView
+                        android:id="@+id/tvLifestyleLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Lifestyle:"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivMapPreview" />
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/chipGroupLifestyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        app:chipSpacingHorizontal="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvLifestyleLabel"
+                        app:singleSelection="false">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipQuiet"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Quiet" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipNonSmoking"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Non-Smoking" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipPetFriendly"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Pet-Friendly" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipPartyFriendly"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Party-Friendly" />
+                    </com.google.android.material.chip.ChipGroup>
+
+                    <!-- Availability Schedule -->
+                    <TextView
+                        android:id="@+id/tvAvailabilityLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Availability Schedule:"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/chipGroupLifestyle" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnEditSchedule"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edit Schedule"
+                        android:textColor="@color/colorAccent"
+                        app:icon="@android:drawable/ic_menu_my_calendar"
+                        app:iconTint="@color/colorAccent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/chipGroupLifestyle"
+                        app:strokeColor="@color/colorAccent" />
+
+                    <ImageView
+                        android:id="@+id/ivSchedulePreview"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#F5F5F5"
+                        android:padding="8dp"
+                        android:scaleType="fitCenter"
+                        android:src="@android:drawable/ic_menu_week"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvAvailabilityLabel" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

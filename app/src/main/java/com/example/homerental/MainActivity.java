@@ -28,16 +28,16 @@ public class MainActivity extends AppCompatActivity {
                 Fragment selectedFragment = null;
                 
                 switch (item.getItemId()) {
-                    case R.id.nav_home:
+                    case R.id.navigation_home:
                         selectedFragment = new HomeFragment();
                         break;
-                    case R.id.nav_search:
-                        selectedFragment = new SearchFragment();
+                    case R.id.navigation_explore:
+                        selectedFragment = new ExploreFragment();
                         break;
-                    case R.id.nav_matches:
+                    case R.id.navigation_likes:
                         selectedFragment = new MatchesFragment();
                         break;
-                    case R.id.nav_profile:
+                    case R.id.navigation_profile:
                         selectedFragment = new ProfileFragment();
                         break;
                 }
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         
         // Set default fragment when app starts
         if (savedInstanceState == null) {
-            bottomNavigationView.setSelectedItemId(R.id.nav_home);
+            bottomNavigationView.setSelectedItemId(R.id.navigation_home);
         }
     }
 }

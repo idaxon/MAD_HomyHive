@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.homerental.app-mergeDebugResources-26:/values-ne/values-ne.xml",
+            "outputFile": "com.example.homerental.app-mergeDebugResources-27:/values-ne/values-ne.xml",
             "map": [
                 {
                     "source": "/Users/daxon/.gradle/caches/8.10.2/transforms/17ccdec3be268264d8360ef5335295be/transformed/material-1.9.0/res/values-ne/values-ne.xml",

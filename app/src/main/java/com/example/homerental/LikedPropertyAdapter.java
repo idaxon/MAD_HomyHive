@@ -36,7 +36,7 @@ public class LikedPropertyAdapter extends RecyclerView.Adapter<LikedPropertyAdap
         Property property = properties.get(position);
         
         holder.tvPropertyName.setText(property.getName());
-        holder.tvPropertyLocation.setText(property.getLocation());
+        holder.tvPropertyLocation.setText(property.getAddress()); // Changed from getLocation() to getAddress()
         holder.tvPropertyPrice.setText(property.getPrice());
         holder.ivPropertyImage.setImageResource(property.getImageResourceId());
         
