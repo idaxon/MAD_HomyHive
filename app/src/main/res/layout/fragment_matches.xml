@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5">
+    android:background="@color/background_dark">
 
     <TextView
         android:id="@+id/tvMatchesTitle"
@@ -13,7 +13,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="Connections"
-        android:textColor="#333333"
+        android:textColor="@color/text_primary"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,11 +30,11 @@
         app:layout_constraintTop_toBottomOf="@+id/tvMatchesTitle"
         app:tabBackground="@android:color/transparent"
         app:tabGravity="fill"
-        app:tabIndicatorColor="#FF4081"
+        app:tabIndicatorColor="@color/colorAccent"
         app:tabIndicatorHeight="3dp"
         app:tabMode="fixed"
-        app:tabSelectedTextColor="#FF4081"
-        app:tabTextColor="#757575" />
+        app:tabSelectedTextColor="@color/colorAccent"
+        app:tabTextColor="@color/text_secondary" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager"

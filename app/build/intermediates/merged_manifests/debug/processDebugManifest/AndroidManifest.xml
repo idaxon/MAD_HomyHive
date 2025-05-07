@@ -39,6 +39,10 @@
         <activity android:name="com.example.homerental.LikesActivity" />
         <activity android:name="com.example.homerental.MatchesActivity" />
 
+        <!-- Add these inside the <application> tag -->
+        <activity android:name="com.example.homerental.ChatListActivity" />
+        <activity android:name="com.example.homerental.ChatActivity" />
+
         <provider
             android:name="androidx.startup.InitializationProvider"
             android:authorities="com.example.homerental.androidx-startup"

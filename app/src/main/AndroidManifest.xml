@@ -25,6 +25,10 @@
         
         <activity android:name=".MatchesActivity" />
         
+        <!-- Add these inside the <application> tag -->
+        <activity android:name=".ChatListActivity" />
+        <activity android:name=".ChatActivity" />
+        
     </application>
 
 </manifest>
